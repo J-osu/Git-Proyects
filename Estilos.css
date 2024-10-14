@@ -1,7 +1,27 @@
-h1{
-    color: blueviolet;
+body{
+    background-color: rgb(8, 8, 8);
 }
-p{
-    color: blue;
-    background-position: 50px;
+h1{
+    color: rgb(255, 255, 255);
+}
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+a{
+    font-size: 100px;
 }
